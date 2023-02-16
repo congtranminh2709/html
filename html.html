@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body>
+    <!-- head -->
+    <div class="header">
+      <div class="header_left">
+        <div class="logo_header">
+          <img src="./img/img_QuocHuy.png" alt="Ảnh k hiển thị" />
+        </div>
+      </div>
+
+      <div class="header_right">
+        <div class="header_title1">
+          <h4 style="color: aliceblue">
+            PHẦN MỀM QUẢN LÍ HỆ THỐNG ĐẢM BẢO VÀ KIỂM ĐỊNH CHẤT LƯỢNG GIÁO DỤC
+            ĐẠI HỌC
+          </h4>
+        </div>
+        <div class="header_title2">
+          <img class="logo_avatar" src="./icons/ic_Notification.png" />
+          <img class="logo_avatar1" src="./icons/ic_Avatar.png" />
+          <span style="color: white;">Admin</span>
+        </div>
+      </div>
+    </div>
+    <!-- main -->
+    <div class="main">
+      <div class="main_left">
+        <div class="dropdown">
+          <button class="dropdown-btn">
+            <img
+              style="width: 5%; height: 5%; float: left; margin-right: 5px"
+              src="./icons/ic_ThongKe.png"
+            />
+            Thống kê báo cáo
+            <img
+              style="width: 5%; height: 5%; float: right"
+              src="./icons/ic_ArrowRight.png"
+              class="img-arrow"
+            />
+          </button>
+          <div class="dropdown-container">
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Menu hệ thông</a>
+              <a href="#">Quản lí nhóm quyền</a>
+              <a href="#">Đối tượng quản lí</a>
+              <a href="#">Tài khoản</a>
+              <a href="#">Cấu hình export excel</a>
+              <a href="#">Cấu hình import excel</a>
+              <a href="#">Cấu hình API</a>
+              <a href="#">Nhật kí hệ thống <img
+                style="width: 5%; height: 5%;float: right; "
+                src="./icons/ic_ArrowRight.png"
+              /></a>
+            </div>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            <img
+              style="width: 5%; height: 5%; float: left; margin-right: 5px"
+              src="./icons/ic_Setting.png"
+            />
+            Quản trị hệ thống
+            <img
+              style="width: 5%; height: 5%; float: right"
+              src="./icons/ic_ArrowRight.png"
+              class="img-arrow"
+            />
+          </button>
+          <div class="dropdown-container">
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            <img
+              style="width: 5%; height: 5%; float: left; margin-right: 5px"
+              src="./icons/ic_Search.png"
+            />
+            Tra cứu chung
+            <img
+              style="width: 5%; height: 5%; float: right"
+              src="./icons/ic_ArrowRight.png"
+              class="img-arrow"
+            />
+          </button>
+          <div class="dropdown-container">
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            <img
+              style="width: 5%; height: 5%; float: left; margin-right: 5px"
+              src="./icons/ic_DanhMuc.png"
+            />
+            Quản lí danh mục
+            <img
+              style="width: 5%; height: 5%; float: right"
+              src="./icons/ic_ArrowRight.png"
+              class="img-arrow"
+            />
+          </button>
+          <div class="dropdown-container">
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            <img
+              style="width: 5%; height: 5%; float: left; margin-right: 5px"
+              src="./icons/ic_DanhMuc.png"
+            />
+            Quản lí danh mục CSGD
+            <img
+              style="width: 5%; height: 5%; float: right"
+              src="./icons/ic_ArrowRight.png"
+              class="img-arrow"
+            />
+          </button>
+          <div class="dropdown-container">
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_right">
+        <div class="container_top">
+          <div class="container_top_text_left">
+            <span style="color: #6495ed">Danh sách tài khoản</span>
+            <span style="float: right">Trang chủ / Tài Khoản</span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="container_table">
+            <div class="tableMain">
+              <div class="tableMainHeader">
+                  <div class="tableMainHeader__Search">
+                      <input type="text" placeholder="Tìm kiếm" class="tableMainHeader__SearchText">
+                      <i class="fa fa-search tableMainHeader__SearchIcon" aria-hidden="true"></i>
+                  </div>
+  
+                  <div class="tableMainHeader__New">
+                      <i class="fa fa-plus" aria-hidden="true"></i>
+                      Thêm mới
+                  </div>
+              </div>
+  
+              <table class="tableData">
+                  <tr>
+                      <th>STT</th>
+                      <th>Tên đăng nhập</th>
+                      <th style="width: 25%">Họ và tên</th>
+                      <th>Ngày tạo</th>
+                      <th>Trạng thái</th>
+                      <th>Tác vụ</th>
+                  </tr>
+  
+                  <tr>
+                      <td>1</td>
+                      <td>Admin</td>
+                      <td>Admin</td>
+                      <td>08/04/2021</td>
+                      <td>
+                          <span class="tableAc">Đang hoạt động</span>
+                      </td>
+                      <td class="fontIcon">
+                        <span style="color: #003eb3"><i class="fa-solid fa-arrows-rotate"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-lock"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-eye"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-pen-to-square"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-trash"></i></span>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>2</td>
+                      <td>Admin</td>
+                      <td>Admin</td>
+                      <td>08/04/2021</td>
+                      <td>
+                          <span class="tableAc">Đang hoạt động</span>
+                      </td>
+                      <td class="fontIcon">
+                        <span style="color: #003eb3"><i class="fa-solid fa-arrows-rotate"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-lock"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-eye"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-pen-to-square"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-trash"></i></span>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>3</td>
+                      <td>Admin</td>
+                      <td>Admin</td>
+                      <td>08/04/2021</td>
+                      <td>
+                          <span class="tableAc">Đang hoạt động</span>
+                      </td>
+                      <td class="fontIcon">
+                        <span style="color: #003eb3"><i class="fa-solid fa-arrows-rotate"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-lock"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-eye"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-pen-to-square"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-trash"></i></span>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>4</td>
+                      <td>Admin</td>
+                      <td>Admin</td>
+                      <td>08/04/2021</td>
+                      <td>
+                          <span class="tableAc">Đang hoạt động</span>
+                      </td>
+                      <td class="fontIcon">
+                        <span style="color: #003eb3"><i class="fa-solid fa-arrows-rotate"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-lock"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-eye"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-pen-to-square"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-trash"></i></span>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>5</td>
+                      <td>Admin</td>
+                      <td>Admin</td>
+                      <td>08/04/2021</td>
+                      <td>
+                          <span class="tableAc">Đang hoạt động</span>
+                      </td>
+                      <td class="fontIcon">
+                        <span style="color: #003eb3"><i class="fa-solid fa-arrows-rotate"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-lock"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-eye"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-pen-to-square"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-trash"></i></span>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>6</td>
+                      <td>Admin</td>
+                      <td>Admin</td>
+                      <td>08/04/2021</td>
+                      <td>
+                          <span class="tableAc">Đang hoạt động</span>
+                      </td>
+                      <td class="fontIcon">
+                        <span style="color: #003eb3"><i class="fa-solid fa-arrows-rotate"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-lock"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-eye"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-pen-to-square"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-trash"></i></span>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>7</td>
+                      <td>Admin</td>
+                      <td>Admin</td>
+                      <td>08/04/2021</td>
+                      <td>
+                          <span class="tableAc">Đang hoạt động</span>
+                      </td>
+                      <td class="fontIcon">
+                        <span style="color: #003eb3"><i class="fa-solid fa-arrows-rotate"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-lock"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-eye"></i></span>
+                        <span style="color: #003eb3"><i class="fa-solid fa-pen-to-square"></i></span>
+                        <span style="color: #ff4d4f"><i class="fa-solid fa-trash"></i></span>
+                      </td>
+                  </tr>
+  
+              </table>
+  
+              <div class="tableFooter">
+                  <div class="tableFooterLeft">
+                      <span class="tableFooterLeft__Text">Hiển thị</span>
+                      <div class="tableFooterLeft__Number">
+                        <input class="record-number" type="number" step="5" value="10" />
+                      </div>
+                      <span class="tableFooterLeft__Text">bản ghi</span>
+                  </div>
+  
+                  <div class="tableCenter">
+                      <span>Hiển thị 11 đến 20 trên 443 bản ghi</span>
+                  </div>
+  
+                  <div class="tableFooterRight">
+                      <div class="tableFooterRight__Icon1">
+                          <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                      </div>
+  
+                      <div class="tableFooterRight__Icon">
+                          <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </div>
+  
+                      <div class="tableFooterRight__Icon2">
+                          <span>2/45</span>
+                      </div>
+  
+                      <div class="tableFooterRight__Icon">
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+  
+                      <div class="tableFooterRight__Icon1">
+                          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script> -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(document).on('click', '.dropdown-btn', function () {
+          if ($(this).next('.dropdown-container').is(':visible')) {
+            $(this).next('.dropdown-container').slideToggle();
+            $(this).find('.img-arrow').attr('src', './icons/ic_ArrowRight.png');
+          }
+
+          if (!$(this).next('.dropdown-container').is(':visible')) {
+            $('.dropdown-container').hide(500);
+            $('.img-arrow').attr('src', './icons/ic_ArrowRight.png');
+            $(this).next('.dropdown-container').slideToggle();
+            $(this).find('.img-arrow').attr('src', './icons/ic_ArrowDown.png');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
